@@ -110,7 +110,12 @@ type Test struct {
 
 // NewTest creates a new Test with the given id and name.
 func NewTest(id int, name string) Test {
-	return Test{ID: id, Name: name, Data: make(map[string]interface{})}
+	if strings.HasPrefix(name, "Benchmark") && !strings.Contains(name, "/") {
+		// default benchmark to pass because in case of nested benchmarks the root one does not emit any "end of benchmark" indicator
+		return Test{ID: id, Name: name, Result: Pass, Data: make(map[string]interface{})}
+	} else {
+		return Test{ID: id, Name: name, Data: make(map[string]interface{})}
+	}
 }
 
 // Error contains details of a build or runtime error.
