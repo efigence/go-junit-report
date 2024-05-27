@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/jstemmer/go-junit-report/v2/gtr"
-	"github.com/jstemmer/go-junit-report/v2/junit"
-	"github.com/jstemmer/go-junit-report/v2/parser/gotest"
+	"github.com/efigence/go-junit-report/v2/gtr"
+	"github.com/efigence/go-junit-report/v2/junit"
+	"github.com/efigence/go-junit-report/v2/parser/gotest"
 )
 
 type parser interface {

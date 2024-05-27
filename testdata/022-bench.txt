@@ -1,18 +1,20 @@
-=== RUN   TestOne
-    bench_test.go:9: test log
---- PASS: TestOne (0.00s)
 goos: linux
 goarch: amd64
 pkg: package/bench
-BenchmarkOne
-    bench_test.go:13: benchmark log (1)
-    bench_test.go:13: benchmark log (100)
-    bench_test.go:13: benchmark log (10000)
-    bench_test.go:13: benchmark log (1000000)
-    bench_test.go:13: benchmark log (100000000)
-    bench_test.go:13: benchmark log (1000000000)
-BenchmarkOne-8   	1000000000	         0.2642 ns/op
-BenchmarkTwo
-BenchmarkTwo-8   	39560503	        33.21 ns/op
+cpu: AMD Ryzen 7 7800X3D 8-Core Processor           
+BenchmarkOne-16     	1000000000	         0.2326 ns/op
+--- BENCH: BenchmarkOne-16
+    bench_test.go:14: benchmark log (1)
+    bench_test.go:14: benchmark log (100)
+    bench_test.go:14: benchmark log (10000)
+    bench_test.go:14: benchmark log (1000000)
+    bench_test.go:14: benchmark log (100000000)
+    bench_test.go:14: benchmark log (1000000000)
+BenchmarkTwo-16     	51129764	        21.07 ns/op
+BenchmarkTree/size:_1-16         	1000000000	         0.2121 ns/op
+BenchmarkTree/size:_2-16         	1000000000	         0.2119 ns/op
+BenchmarkTree/size:_4-16         	1000000000	         0.2111 ns/op
+BenchmarkTree/size:_8-16         	1000000000	         0.2113 ns/op
+BenchmarkTree/size:_16-16        	1000000000	         0.2111 ns/op
 PASS
-ok  	package/bench	1.640s
+ok  	package/bench	2.529s

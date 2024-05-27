@@ -1,6 +1,7 @@
 package bench
 
 import (
+	"fmt"
 	"strconv"
 	"testing"
 )
@@ -25,4 +26,17 @@ func BenchmarkTwo(b *testing.B) {
 
 func test(x int) int {
 	return x + 1
+}
+
+func BenchmarkTree(b *testing.B) {
+	sizes := []int{1, 2, 4, 8, 16}
+	for _, size := range sizes {
+		b.Run(
+			fmt.Sprintf("size: %d", size),
+			func(b *testing.B) {
+				for i := 0; i < b.N; i++ {
+					test(i + size)
+				}
+			})
+	}
 }

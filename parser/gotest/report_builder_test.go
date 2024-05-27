@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jstemmer/go-junit-report/v2/gtr"
-	"github.com/jstemmer/go-junit-report/v2/parser/gotest/internal/collector"
+	"github.com/efigence/go-junit-report/v2/gtr"
+	"github.com/efigence/go-junit-report/v2/parser/gotest/internal/collector"
 
 	"github.com/google/go-cmp/cmp"
 )
@@ -93,7 +93,7 @@ func TestReport(t *testing.T) {
 						Data:   map[string]interface{}{key: Benchmark{NsPerOp: 100}},
 					},
 					{
-						ID:     5,
+						ID:     6,
 						Name:   "BenchmarkTwo",
 						Result: gtr.Fail,
 						Data:   map[string]interface{}{},
@@ -105,7 +105,7 @@ func TestReport(t *testing.T) {
 				Name:      "package/failing1",
 				Timestamp: testTimestamp,
 				BuildError: gtr.Error{
-					ID:     6,
+					ID:     8,
 					Name:   "package/failing1",
 					Cause:  "[build failed]",
 					Output: []string{"error message"},
