@@ -1,5 +1,8 @@
 # go-junit-report
 
+
+# WARNING, THIS IS FORK WITH FEW QUIRKS FIXED FOR PERSONAL USE, GO TO MAIN REPO UNDER https://github.com/jstemmer/go-junit-report TO GET VERSION FROM AUTHOR
+
 go-junit-report is a tool that converts [`go test`] output to a JUnit compatible
 XML report, suitable for use with applications such as [Jenkins].
 
