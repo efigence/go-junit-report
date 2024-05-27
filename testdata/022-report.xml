@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="7">
 	<testsuite name="package/bench" tests="7" failures="0" errors="0" id="0" hostname="hostname" time="2.529" timestamp="2022-01-01T00:00:00Z">
-
 		<testcase name="BenchmarkOne" classname="package/bench" time="0.000"></testcase>
 		<testcase name="BenchmarkTwo" classname="package/bench" time="1.077"></testcase>
 		<testcase name="BenchmarkTree/size:_1" classname="package/bench" time="0.212"></testcase>

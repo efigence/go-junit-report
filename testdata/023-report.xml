@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="2">
 	<testsuite name="package/one" tests="2" failures="0" errors="0" id="0" hostname="hostname" time="9.415" timestamp="2022-01-01T00:00:00Z">
-
 		<testcase name="BenchmarkIpsHistoryInsert" classname="package/one" time="1.577"></testcase>
 		<testcase name="BenchmarkIpsHistoryLookup" classname="package/one" time="1.521"></testcase>
 		<system-out><![CDATA[goos: darwin

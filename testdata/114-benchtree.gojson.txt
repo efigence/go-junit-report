@@ -1,0 +1,50 @@
+{"Time":"2024-05-27T17:02:19.456922741+02:00","Action":"start","Package":"package/bench"}
+{"Time":"2024-05-27T17:02:19.457484866+02:00","Action":"run","Package":"package/bench","Test":"TestOne"}
+{"Time":"2024-05-27T17:02:19.457494935+02:00","Action":"output","Package":"package/bench","Test":"TestOne","Output":"=== RUN   TestOne\n"}
+{"Time":"2024-05-27T17:02:19.457522087+02:00","Action":"output","Package":"package/bench","Test":"TestOne","Output":"    bench_test.go:10: test log\n"}
+{"Time":"2024-05-27T17:02:19.457528168+02:00","Action":"output","Package":"package/bench","Test":"TestOne","Output":"--- PASS: TestOne (0.00s)\n"}
+{"Time":"2024-05-27T17:02:19.457531415+02:00","Action":"pass","Package":"package/bench","Test":"TestOne","Elapsed":0}
+{"Time":"2024-05-27T17:02:19.457785957+02:00","Action":"output","Package":"package/bench","Output":"goos: linux\n"}
+{"Time":"2024-05-27T17:02:19.457791247+02:00","Action":"output","Package":"package/bench","Output":"goarch: amd64\n"}
+{"Time":"2024-05-27T17:02:19.45779314+02:00","Action":"output","Package":"package/bench","Output":"pkg: package/bench\n"}
+{"Time":"2024-05-27T17:02:19.457794934+02:00","Action":"output","Package":"package/bench","Output":"cpu: AMD Ryzen 7 7800X3D 8-Core Processor           \n"}
+{"Time":"2024-05-27T17:02:19.457797208+02:00","Action":"run","Package":"package/bench","Test":"BenchmarkOne"}
+{"Time":"2024-05-27T17:02:19.457798861+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"=== RUN   BenchmarkOne\n"}
+{"Time":"2024-05-27T17:02:19.457800584+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"BenchmarkOne\n"}
+{"Time":"2024-05-27T17:02:19.457936913+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"    bench_test.go:14: benchmark log (1)\n"}
+{"Time":"2024-05-27T17:02:19.458056159+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"    bench_test.go:14: benchmark log (100)\n"}
+{"Time":"2024-05-27T17:02:19.458196464+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"    bench_test.go:14: benchmark log (10000)\n"}
+{"Time":"2024-05-27T17:02:19.458300341+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"    bench_test.go:14: benchmark log (1000000)\n"}
+{"Time":"2024-05-27T17:02:19.458638582+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"    bench_test.go:14: benchmark log (100000000)\n"}
+{"Time":"2024-05-27T17:02:19.48161288+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"    bench_test.go:14: benchmark log (1000000000)\n"}
+{"Time":"2024-05-27T17:02:19.710434602+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkOne","Output":"BenchmarkOne-16     \t1000000000\t         0.2288 ns/op\n"}
+{"Time":"2024-05-27T17:02:19.710453628+02:00","Action":"run","Package":"package/bench","Test":"BenchmarkTwo"}
+{"Time":"2024-05-27T17:02:19.710457235+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTwo","Output":"=== RUN   BenchmarkTwo\n"}
+{"Time":"2024-05-27T17:02:19.710461774+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTwo","Output":"BenchmarkTwo\n"}
+{"Time":"2024-05-27T17:02:20.965044099+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTwo","Output":"BenchmarkTwo-16     \t58646998\t        21.03 ns/op\n"}
+{"Time":"2024-05-27T17:02:20.965074627+02:00","Action":"run","Package":"package/bench","Test":"BenchmarkTree"}
+{"Time":"2024-05-27T17:02:20.965079186+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree","Output":"=== RUN   BenchmarkTree\n"}
+{"Time":"2024-05-27T17:02:20.965082462+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree","Output":"BenchmarkTree\n"}
+{"Time":"2024-05-27T17:02:20.965174516+02:00","Action":"run","Package":"package/bench","Test":"BenchmarkTree/size:_1"}
+{"Time":"2024-05-27T17:02:20.965177873+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_1","Output":"=== RUN   BenchmarkTree/size:_1\n"}
+{"Time":"2024-05-27T17:02:20.965188002+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_1","Output":"BenchmarkTree/size:_1\n"}
+{"Time":"2024-05-27T17:02:21.199649009+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_1","Output":"BenchmarkTree/size:_1-16         \t1000000000\t         0.2123 ns/op\n"}
+{"Time":"2024-05-27T17:02:21.199676351+02:00","Action":"run","Package":"package/bench","Test":"BenchmarkTree/size:_2"}
+{"Time":"2024-05-27T17:02:21.199680118+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_2","Output":"=== RUN   BenchmarkTree/size:_2\n"}
+{"Time":"2024-05-27T17:02:21.199682993+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_2","Output":"BenchmarkTree/size:_2\n"}
+{"Time":"2024-05-27T17:02:21.447262294+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_2","Output":"BenchmarkTree/size:_2-16         \t1000000000\t         0.2255 ns/op\n"}
+{"Time":"2024-05-27T17:02:21.447289265+02:00","Action":"run","Package":"package/bench","Test":"BenchmarkTree/size:_4"}
+{"Time":"2024-05-27T17:02:21.447293453+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_4","Output":"=== RUN   BenchmarkTree/size:_4\n"}
+{"Time":"2024-05-27T17:02:21.447296399+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_4","Output":"BenchmarkTree/size:_4\n"}
+{"Time":"2024-05-27T17:02:21.68129027+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_4","Output":"BenchmarkTree/size:_4-16         \t1000000000\t         0.2116 ns/op\n"}
+{"Time":"2024-05-27T17:02:21.681310108+02:00","Action":"run","Package":"package/bench","Test":"BenchmarkTree/size:_8"}
+{"Time":"2024-05-27T17:02:21.681314767+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_8","Output":"=== RUN   BenchmarkTree/size:_8\n"}
+{"Time":"2024-05-27T17:02:21.681319375+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_8","Output":"BenchmarkTree/size:_8\n"}
+{"Time":"2024-05-27T17:02:21.914881529+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_8","Output":"BenchmarkTree/size:_8-16         \t1000000000\t         0.2115 ns/op\n"}
+{"Time":"2024-05-27T17:02:21.914894033+02:00","Action":"run","Package":"package/bench","Test":"BenchmarkTree/size:_16"}
+{"Time":"2024-05-27T17:02:21.914896748+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_16","Output":"=== RUN   BenchmarkTree/size:_16\n"}
+{"Time":"2024-05-27T17:02:21.914898832+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_16","Output":"BenchmarkTree/size:_16\n"}
+{"Time":"2024-05-27T17:02:22.150582185+02:00","Action":"output","Package":"package/bench","Test":"BenchmarkTree/size:_16","Output":"BenchmarkTree/size:_16-16        \t1000000000\t         0.2133 ns/op\n"}
+{"Time":"2024-05-27T17:02:22.150600039+02:00","Action":"output","Package":"package/bench","Output":"PASS\n"}
+{"Time":"2024-05-27T17:02:22.150967675+02:00","Action":"output","Package":"package/bench","Output":"ok  \tpackage/bench\t2.694s\n"}
+{"Time":"2024-05-27T17:02:22.150978987+02:00","Action":"pass","Package":"package/bench","Elapsed":2.694}

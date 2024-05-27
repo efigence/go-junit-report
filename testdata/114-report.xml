@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="9">
+	<testsuite name="package/bench" tests="9" failures="0" errors="0" id="0" hostname="hostname" time="2.694" timestamp="2022-01-01T00:00:00Z">
+		<testcase name="TestOne" classname="package/bench" time="0.000">
+			<system-out><![CDATA[    bench_test.go:10: test log]]></system-out>
+		</testcase>
+		<testcase name="BenchmarkOne" classname="package/bench" time="0.229">
+			<system-out><![CDATA[    bench_test.go:14: benchmark log (1)
+    bench_test.go:14: benchmark log (100)
+    bench_test.go:14: benchmark log (10000)
+    bench_test.go:14: benchmark log (1000000)
+    bench_test.go:14: benchmark log (100000000)
+    bench_test.go:14: benchmark log (1000000000)]]></system-out>
+		</testcase>
+		<testcase name="BenchmarkTwo" classname="package/bench" time="1.233"></testcase>
+		<testcase name="BenchmarkTree" classname="package/bench" time="0.000"></testcase>
+		<testcase name="BenchmarkTree/size:_1" classname="package/bench" time="0.212"></testcase>
+		<testcase name="BenchmarkTree/size:_2" classname="package/bench" time="0.226"></testcase>
+		<testcase name="BenchmarkTree/size:_4" classname="package/bench" time="0.212"></testcase>
+		<testcase name="BenchmarkTree/size:_8" classname="package/bench" time="0.211"></testcase>
+		<testcase name="BenchmarkTree/size:_16" classname="package/bench" time="0.213"></testcase>
+		<system-out><![CDATA[goos: linux
+goarch: amd64
+pkg: package/bench
+cpu: AMD Ryzen 7 7800X3D 8-Core Processor           ]]></system-out>
+	</testsuite>
+</testsuites>

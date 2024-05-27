@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
+	"github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -12,8 +13,6 @@ import (
 	"strings"
 	"testing"
 	"time"
-
-	"github.com/google/go-cmp/cmp"
 )
 
 const testDataDir = "../../testdata/"
@@ -82,10 +81,10 @@ func testRun(inputFile, reportFile string, config Config, t *testing.T) {
 	if _, err := config.Run(input, &output); err != nil {
 		t.Fatal(err)
 	}
-
-	if diff := cmp.Diff(string(wantReport), output.String()); diff != "" {
-		t.Errorf("Unexpected report diff (-want, +got):\n%v", diff)
-	}
+	assert.Equal(t, string(wantReport), output.String())
+	//	if diff := cmp.Diff(string(wantReport), output.String()); diff != "" {
+	//		t.Errorf("Unexpected report diff (-want, +got):\n%v", diff)
+	//	}
 }
 
 func testFileConfig(filename string) (config Config, reportFile string, err error) {
