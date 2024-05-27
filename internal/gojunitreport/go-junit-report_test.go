@@ -74,9 +74,6 @@ func testRun(inputFile, reportFile string, config Config, t *testing.T) {
 		config.Parser = "gojson"
 	}
 	config.Hostname = "hostname"
-	if config.Properties == nil {
-		config.Properties = map[string]string{"go.version": "1.0"}
-	}
 	config.TimestampFunc = func() time.Time {
 		return time.Date(2022, 1, 1, 0, 0, 0, 0, time.UTC)
 	}

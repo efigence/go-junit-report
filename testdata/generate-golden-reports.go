@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jstemmer/go-junit-report/v2/internal/gojunitreport"
+	"github.com/efigence/go-junit-report/v2/internal/gojunitreport"
 )
 
 var verbose bool
@@ -104,9 +104,6 @@ func createReportFromInput(inputFile, outputFile string, write bool) error {
 	config.Hostname = "hostname"
 	config.TimestampFunc = func() time.Time {
 		return time.Date(2022, 1, 1, 0, 0, 0, 0, time.UTC)
-	}
-	if config.Properties == nil {
-		config.Properties = map[string]string{"go.version": "1.0"}
 	}
 
 	_, err = config.Run(in, out)
